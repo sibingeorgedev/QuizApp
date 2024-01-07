@@ -1,0 +1,250 @@
+<h2>Quiz</h2>
+<p>Welcome to the quiz! Answer the following questions:</p>
+
+<!-- Question 1 -->
+<div class="question" data-question="q1">
+    <p>What keyword is used to declare a variable in JavaScript?</p>
+    <label for="q1a">
+        <input type="radio" id="q1a" name="q1" value="a"> a) let
+    </label>
+    <label for="q1b">
+        <input type="radio" id="q1b" name="q1" value="b"> b) variable
+    </label>
+    <label for="q1c">
+        <input type="radio" id="q1c" name="q1" value="c"> c) var
+    </label>
+</div>
+
+<!-- Question 2 -->
+<div class="question" data-question="q2">
+    <p>What is the purpose of the typeof operator in JavaScript?</p>
+    <label for="q2a">
+        <input type="radio" id="q2a" name="q2" value="a"> a) To check if a variable is defined
+    </label>
+    <label for="q2b">
+        <input type="radio" id="q2b" name="q2" value="b"> b) To find the type of a variable
+    </label>
+    <label for="q2c">
+        <input type="radio" id="q2c" name="q2" value="c"> c) To concatenate strings
+    </label>
+</div>
+
+<!-- Question 3 -->
+<div class="question" data-question="q3">
+    <p>What is the correct way to write a comment in JavaScript?</p>
+    <label for="q3a">
+        <input type="radio" id="q3a" name="q3" value="a"> a) // This is a comment
+    </label>
+    <label for="q3b">
+        <input type="radio" id="q3b" name="q3" value="b"> b) / This is a comment 
+    </label>
+    <label for="q3c">
+        <input type="radio" id="q3c" name="q3" value="c"> c) This is a comment //
+    </label>
+</div>
+
+<!-- Question 4 -->
+<div class="question" data-question="q4">
+    <p>In JavaScript, what is the purpose of the === operator?</p>
+    <label for="q4a">
+        <input type="radio" id="q4a" name="q4" value="a"> a) Assignment
+    </label>
+    <label for="q4b">
+        <input type="radio" id="q4b" name="q4" value="b"> b) Strict equality comparison
+    </label>
+    <label for="q4c">
+        <input type="radio" id="q4c" name="q4" value="c"> c) Logical AND
+    </label>
+</div>
+
+<!-- Question 5 -->
+<div class="question" data-question="q5">
+    <p>What is the role of JSON.parse() in JavaScript?</p>
+    <label for="q5a">
+        <input type="radio" id="q5a" name="q5" value="a"> a) To parse a JSON string and convert it to an object
+    </label>
+    <label for="q5b">
+        <input type="radio" id="q5b" name="q5" value="b"> b) To stringify a JavaScript object into a JSON-formatted string
+    </label>
+    <label for="q5c">
+        <input type="radio" id="q5c" name="q5" value="c"> c) To check if an object is empty
+    </label>
+</div>
+
+<!-- Question 6 -->
+<div class="question" data-question="q6">
+    <p>Which function is used to schedule a function to run after a specified interval in JavaScript?</p>
+    <label for="q6a">
+        <input type="radio" id="q6a" name="q6" value="a"> a) setInterval()
+    </label>
+    <label for="q6b">
+        <input type="radio" id="q6b" name="q6" value="b"> b) setTimeout()
+    </label>
+    <label for="q6c">
+        <input type="radio" id="q6c" name="q6" value="c"> c) setImmediate()
+    </label>
+</div>
+
+<!-- Question 7 -->
+<div class="question" data-question="q7">
+    <p>What is the purpose of the try, catch, and finally blocks in JavaScript?</p>
+    <label for="q7a">
+        <input type="radio" id="q7a" name="q7" value="a"> a) To define a loop
+    </label>
+    <label for="q7b">
+        <input type="radio" id="q7b" name="q7" value="b"> b) To handle exceptions and execute code in case of errors
+    </label>
+    <label for="q7c">
+        <input type="radio" id="q7c" name="q7" value="c"> c) To declare variables
+    </label>
+</div>
+
+<!-- Question 8 -->
+<div class="question" data-question="q8">
+    <p>What does the localStorage object in JavaScript allow you to do?</p>
+    <label for="q8a">
+        <input type="radio" id="q8a" name="q8" value="a"> a) Access the browser's location
+    </label>
+    <label for="q8b">
+        <input type="radio" id="q8b" name="q8" value="b"> b) Store key-value pairs locally in the user's browser
+    </label>
+    <label for="q8c">
+        <input type="radio" id="q8c" name="q8" value="c"> c) Perform HTTP requests
+    </label>
+</div>
+
+
+<div id="quizModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modalContent"></div>
+
+        <div id="accordion" class="margin_top_20">
+            <h3>View the Answers</h3>
+            <ul>
+                <!-- Question 1 -->
+                <li class="li_class">
+                    <p>Question: What keyword is used to declare a variable in JavaScript?</p>
+                    <p>Options:</p>
+                    <ul>
+                        <li>a) let</li>
+                        <li>b) variable</li>
+                        <li>c) var</li>
+                    </ul>
+                    <p>Correct Answer: c) var</p>
+                    <p><span id="userAnswer_q1"></span></p>
+                </li>
+
+                <!-- Question 2 -->
+                <li class="li_class">
+                    <p>Question: What is the purpose of the typeof operator in JavaScript?</p>
+                    <p>Options:</p>
+                    <ul>
+                        <li>a) To check if a variable is defined</li>
+                        <li>b) To find the type of a variable</li>
+                        <li>c) To concatenate strings</li>
+                    </ul>
+                    <p>Correct Answer: b) To find the type of a variable</p>
+                    <p><span id="userAnswer_q2"></span></p>
+                </li>
+
+                <!-- Question 3 -->
+                <li class="li_class">
+                    <p>Question: What is the correct way to write a comment in JavaScript?</p>
+                    <p>Options:</p>
+                    <ul>
+                        <li>a) // This is a comment</li>
+                        <li>b) / This is a comment </li>
+                        <li>c) This is a comment //</li>
+                    </ul>
+                    <p>Correct Answer: a) // This is a comment</p>
+                    <p><span id="userAnswer_q3"></span></p>
+                </li>
+
+                <!-- Question 4 -->
+                <li class="li_class">
+                    <p>Question: In JavaScript, what is the purpose of the === operator?</p>
+                    <p>Options:</p>
+                    <ul>
+                        <li>a) Assignment</li>
+                        <li>b) Strict equality comparison</li>
+                        <li>c) Logical AND</li>
+                    </ul>
+                    <p>Correct Answer: b) Strict equality comparison</p>
+                    <p><span id="userAnswer_q4"></span></p>
+                </li>
+
+                <!-- Question 5 -->
+                <li class="li_class">
+                    <p>Question: What is the role of JSON.parse() in JavaScript?</p>
+                    <p>Options:</p>
+                    <ul>
+                        <li>a) To parse a JSON string and convert it to an object</li>
+                        <li>b) To stringify a JavaScript object into a JSON-formatted string</li>
+                        <li>c) To check if an object is empty</li>
+                    </ul>
+                    <p>Correct Answer: a) To parse a JSON string and convert it to an object</p>
+                    <p><span id="userAnswer_q5"></span></p>
+                </li>
+
+                <!-- Question 6 -->
+                <li class="li_class">
+                    <p>Question: Which function is used to schedule a function to run after a specified interval in JavaScript?</p>
+                    <p>Options:</p>
+                    <ul>
+                        <li>a) setInterval()</li>
+                        <li>b) setTimeout()</li>
+                        <li>c) setImmediate()</li>
+                    </ul>
+                    <p>Correct Answer: a) setInterval()</p>
+                    <p><span id="userAnswer_q6"></span></p>
+                </li>
+
+                <!-- Question 7 -->
+                <li class="li_class">
+                    <p>Question: What is the purpose of the try, catch, and finally blocks in JavaScript?</p>
+                    <p>Options:</p>
+                    <ul>
+                        <li>a) To define a loop</li>
+                        <li>b) To handle exceptions and execute code in case of errors</li>
+                        <li>c) To declare variables</li>
+                    </ul>
+                    <p>Correct Answer: b) To handle exceptions and execute code in case of errors</p>
+                    <p><span id="userAnswer_q7"></span></p>
+                </li>
+
+                <!-- Question 8 -->
+                <li class="li_class">
+                    <p>Question: What does the localStorage object in JavaScript allow you to do?</p>
+                    <p>Options:</p>
+                    <ul>
+                        <li>a) Access the browser's location</li>
+                        <li>b) Store key-value pairs locally in the user's browser</li>
+                        <li>c) Perform HTTP requests</li>
+                    </ul>
+                    <p>Correct Answer: b) Store key-value pairs locally in the user's browser</p>
+                    <p><span id="userAnswer_q8"></span></p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+<button onclick="submitQuiz()">Submit Quiz</button>
+
+<script src="./js/quiz_app.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script>
+    jQuery(document).ready(function ($) {
+        $("#accordion").accordion({
+            collapsible: true,
+            active: false,
+            heightStyle: "content"
+        });
+    });
+</script>
+<link rel="stylesheet" href="./css/styles.css">
